@@ -34,6 +34,12 @@ option(BUILD_DX12 "Build with DirectX12 Runtime support" ON)
 # Enable the use of OpenMP for software BC6H/BC7 compression
 option(BC_USE_OPENMP "Build with OpenMP support" ON)
 
+#---- PDA options ---
+set(BUILD_TOOLS     OFF CACHE BOOL "Build tex command-line tools" FORCE)  # PDA
+set(BUILD_SAMPLE    OFF CACHE BOOL "Build DDSView sample (requires fxc.exe)" FORCE)  # PDA
+set(BUILD_DX11      OFF CACHE BOOL "Build with DirectX11 Runtime support (requires fxc.exe)" FORCE)  # PDA
+#--------------------
+
 # Builds Xbox extensions for Host PC
 option(BUILD_XBOX_EXTS_XBOXONE "Build Xbox library extensions for Xbox One" OFF)
 option(BUILD_XBOX_EXTS_SCARLETT "Build Xbox library extensions for Xbox Series X|S" OFF)
